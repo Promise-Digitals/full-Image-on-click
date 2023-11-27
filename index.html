@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FullImage on Click</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="content">
+            <img src="/images/image-1.jpg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-2.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-3.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-4.webp" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-5.webp" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-6.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-7.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-8.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-9.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-10.jpeg" alt="" onclick="fullView(this.src)">
+            <img src="/images/image-11.jpeg" alt="" onclick="fullView(this.src)">
+        </div>
+        <div class="full-view">
+            <img src="/images/image-4.webp" id="full-image">
+        </div>
+    </div>
+
+
+    <script>
+        fullViewImage = document.querySelector(".full-view");
+        
+        function fullView(imgLink){
+            document.getElementById("full-image").src = imgLink;
+            document.querySelector('.full-view').style.display = "flex";
+        }
+
+        fullViewImage.addEventListener("click", e =>{
+            if (e.target.matches("img")){
+                document.querySelector('.full-view').style.display = "flex";
+            }else{
+                document.querySelector('.full-view').style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
