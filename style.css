@@ -8,14 +8,14 @@
     width: 100%;
     display: grid;
     place-items: center;
-    background: #555;
+    background: #1f2b37;
     min-height: 100vh;
     position: relative;
 }
 .container h1{
     font-size: 40px;
     text-transform: uppercase;
-    color: #fff;
+    color: #4f76f6;
     position: absolute;
     top: 15px;
     text-align: center;
