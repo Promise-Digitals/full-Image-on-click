@@ -8,14 +8,14 @@
     width: 100%;
     display: grid;
     place-items: center;
-    background: #1f2b37;
+    background: #181818;
     min-height: 100vh;
     position: relative;
 }
 .container h1{
     font-size: 40px;
     text-transform: uppercase;
-    color: #4f76f6;
+    color: #6660ff;
     position: absolute;
     top: 15px;
     text-align: center;
@@ -31,6 +31,8 @@
 .content img{
     max-width: 290px;
     max-height: 240px;
+    border: 2px solid #6660ff;
+    border-radius: 5px;
     display: block;
     object-fit: cover;
     object-position: center;
